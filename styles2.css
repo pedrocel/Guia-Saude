@@ -38,6 +38,85 @@
     padding: 52px 0 52px 0;
 }
 
+.offer-component {
+    font-family: 'Archivo Black', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offer-text {
+    text-align: center;
+    text-transform: uppercase;
+    color: #202f5b;
+    font-size: 26px;
+    line-height: 1;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+.offer-text-description {
+    text-align: center;
+    text-transform: uppercase;
+    color: #202f5b;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.offer-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.offer-image {
+    cursor: pointer;
+    max-height: 400px;
+    margin: 0 5px;
+}
+
+.offer-image-best {
+    cursor: pointer;
+    max-height: 460px;
+    margin: 0 5px;
+}
+
+.billing {
+    padding: 40px 0;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    background-color: transparent;
+    background-image: radial-gradient(at center center,#4871af 0%,#112e59 89%);
+}
+
+.billing h3 {
+    width: 48%;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.billing-button {
+    cursor: pointer;
+    background-color: #ffba00;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 900;
+    margin: 20px 0;
+    text-align: center;
+} 
+
 .comments-count {
     margin-top: 60px;
     color: #1a1a1a;
@@ -167,6 +246,114 @@
     margin: 0 20px;
 }
 
+.results {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    background-image: linear-gradient(0deg,#cbcfd9 0%,#fff 44%);
+}
+
+.results-content {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 60px 0;
+    justify-content: center;
+}
+
+.results img {
+    width: 320px;
+    max-width: 600px;
+    height: auto;
+    max-height: 400px;
+}
+
+.results-text {
+    width: 50%;
+    color: #202f5b;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.results-text h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.results-text h3 {
+    color: #7a7a7a;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    line-height: 1.3em;
+}
+
+.commom-questions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+.commom-questions h3 {
+    text-align: center;
+    font-family: 'Archivo black', sans-serif;
+    font-size: 26px;
+}
+
+.drop-item {
+    overflow: hidden;
+    cursor: pointer;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+    border-color: #02010100;
+    background-color: #112e59;
+    padding: 10px 10px;
+}
+
+.drop-text {
+    overflow: hidden;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.plus {
+    margin-right: 44px;
+    font-size: 24px;
+    font-weight: 900;
+    color: white;
+}
+
+.info {
+    margin: 0 40px;
+    width: 30%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info h4 {
+    overflow: hidden;
+    color: #6d6d6d;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px 0;
+    font-weight: 400;
+}
+
 @media screen and (max-width: 768px) {
     .body-component h2 {
         font-size: 21px;
@@ -191,6 +378,68 @@
     .header-component {
         height: 147px;
     }
+    .offer-items {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .offer-image {
+        max-height: 500px;
+        margin: 15px 0;
+    }
+    
+    .offer-image-best {
+        max-height: 600px;
+        height: 100%;
+        margin: 15px 0;
+    }
+
+    .billing h3 {
+        width: 90%;
+        font-size: 16px
+    }
+
+    .billing h2 {
+        width: 90%;
+        font-size: 20px
+    }
+
+    .billing-button {
+        align-self: center;
+        width: 60%;
+    }
+
+    .results-content {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .results-text {
+        margin-top: 20px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .drop-item {
+        width: 80%;
+    }
+    
+    .info {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .info h4 {
+        width: 100%;
+        font-size: 12px
+    }
+
+    .info h4 {
+        width: 60%;
+        font-size: 12px
+    }
+    
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@400;500&display=swap');

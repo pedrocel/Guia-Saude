@@ -25,6 +25,19 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- VRTube -->
     <link
@@ -98,7 +111,7 @@
     document.addEventListener("DOMContentLoaded", function() {
 
 
-    var SECONDS_TO_DISPLAY = 0;
+    var SECONDS_TO_DISPLAY = 2165;
     var CLASS_TO_DISPLAY = ".delay";
 
 
@@ -127,7 +140,7 @@
     if (typeof smartplayer === 'undefined' || !(smartplayer.instances && smartplayer.instances.length)) {
     if (attempts >= 10) return;
     attempts += 1;
-    return setTimeout(function () { startWatchVideoProgress() }, 1);
+    return setTimeout(function () { startWatchVideoProgress() }, 1000);
     }
     smartplayer.instances[0].on('timeupdate', () => {
     if (elsDisplayed || smartplayer.instances[0].smartAutoPlay) return;
@@ -136,7 +149,7 @@
     })
     }
     if (alreadyElsDisplayed === 'true') {
-    setTimeout(function () { showHiddenElements(); }, 1);
+    setTimeout(function () { showHiddenElements(); }, 100);
     } else {
     startWatchVideoProgress()
     }
@@ -183,6 +196,214 @@
     </div>
 
     <!-- BODY -->
+
+    <div class="offer-component">
+      <h3 class="offer-text">oferta especial</h3>
+      <h3 class="offer-text-description">VOCÊ FOI CONTEMPLADO(A) COM ESSA OFERTA ÚNICA E EXCLUSIVA!</h3>
+    </div>
+    <div
+      class="offer-items"
+      id="scrollToSection"
+    >
+      <img
+        onclick="window.location.href='https://SUAURL.com/10FRASCOS'"
+        class="offer-image"
+        src="https://guiasaudeemdia.com.br/wp-content/uploads/2023/11/PTZ01.png"
+      />
+      <img
+        onclick="window.location.href='https://SUAURL.com/5FRASCOS'"
+        class="offer-image-best"
+        src="https://guiasaudeemdia.com.br/wp-content/uploads/2023/11/PTZ02.png"
+      />
+      <img
+        onclick="window.location.href='https://SUAURL.com/3FRASCOS'"
+        class="offer-image"
+        src="https://guiasaudeemdia.com.br/wp-content/uploads/2023/11/PTZ03.png"
+      />
+      <img
+        onclick="window.location.href='https://SUAURL.com/1FRASCO'"
+        class="offer-image"
+        src="https://guiasaudeemdia.com.br/wp-content/uploads/2023/11/PTZ04.png"
+      />
+    </div>
+
+    <div class="billing">
+      <h2>DIFICULDADE PARA CONCLUIR A COMPRA?</h2>
+      <h3>COMPRE DIRETAMENTE COM A NOSSA EQUIPE DE ATENDIMENTO PELO NÚMERO +55 82 9915-5304 OU CLIQUE NO BOTÃO ABAIXO.</h3>
+      <div
+        class="billing-button"
+        onclick="window.location.href='https://api.whatsapp.com/send?phone=558299155304&text=Ol%C3%A1+Gabriel.+Tenho+d%C3%BAvidas+sobre+o+renova-D'"
+      >
+        FALE COM UM ATENDENTE
+      </div>
+    </div>
+
+    <div class="results">
+      <div class="results-content">
+        <img
+          src="https://guiasaudeemdia.com.br/wp-content/uploads/2023/11/Garantia_150_ptz.png"
+          alt="COMPRAR"
+        />
+        <div class="results-text">
+          <h2>GARANTIA INCONDICIONAL DE RESULTADOS!</h2>
+          <h3>Temos tanta confiança na fórmula poderosa do nosso produto - e todos os resultados que ela é capaz de entregar - que resolvemos fazer uma garantia única de resultados.</h3>
+          <h3>Se você não estiver satisfeito com os seus resultados ou com a sua experiência com o produto até 150 dias de tratamento, reembolsaremos 100% do seu dinheiro e vamos comprar todos os potes que você comprou, pelo mesmo valor que você pagou.</h3>
+          <div
+            class="billing-button"
+            onclick="scrollToSection()"
+          >
+            QUERO EXPERIMENTAR
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="offer-component">
+      <h3 class="offer-text">oferta especial</h3>
+      <h3 class="offer-text-description">VOCÊ FOI CONTEMPLADO(A) COM ESSA OFERTA ÚNICA E EXCLUSIVA!</h3>
+    </div>
+    <div class="offer-items">
+      <img
+        class="offer-image"
+        src="https://guiasaudeemdia.com.br/wp-content/uploads/2023/11/PTZ01.png"
+      />
+      <img
+        class="offer-image-best"
+        src="https://guiasaudeemdia.com.br/wp-content/uploads/2023/11/PTZ02.png"
+      />
+      <img
+        class="offer-image"
+        src="https://guiasaudeemdia.com.br/wp-content/uploads/2023/11/PTZ03.png"
+      />
+      <img
+        class="offer-image"
+        src="https://guiasaudeemdia.com.br/wp-content/uploads/2023/11/PTZ04.png"
+      />
+    </div>
+
+    <div class="billing">
+      <h2>DIFICULDADE PARA CONCLUIR A COMPRA?</h2>
+      <h3>COMPRE DIRETAMENTE COM A NOSSA EQUIPE DE ATENDIMENTO PELO NÚMERO +55 82 9915-5304 OU CLIQUE NO BOTÃO ABAIXO.</h3>
+      <div
+        class="billing-button"
+        onclick="window.location.href='https://api.whatsapp.com/send?phone=558299155304&text=Ol%C3%A1+Gabriel.+Tenho+d%C3%BAvidas+sobre+o+renova-D'"
+      >
+        FALE COM UM ATENDENTE
+      </div>
+    </div>
+
+    <div class="commom-questions">
+      <h3>PERGUNTAS FREQUENTES</h3>
+
+      <div
+        class="drop-item"
+        onclick="toggleInfo(1)"
+      >
+        <h3 class="plus">+</h3>
+        <h2 class="drop-text">1. QUAL O ESTOQUE MAIS VENDIDO?</h2>
+      </div>
+      <div
+        id="info1"
+        class="info"
+      >
+        <h4>O campeão de vendas e o mais recomendado por especialistas é o tratamento de 5 meses, isso porque, apesar de ter efeitos imediatos e você ter resultados logo nos primeiros dias com o Prostazin, os melhores benefícios vem do uso prolongado do produto.</h4>
+        <h4>Além disso, você recebe 60% de desconto quando escolhe o estoque para 5 meses e se protege contra a falta de estoque da nossa parte.</h4>
+        <h4>Faz muito sentido escolher o tratamento para 5 meses, porque você ainda é agraciado com uma garantia incondicional de 150 dias para testar o produto. Se você não estiver tendo os resultados que pensava, apenas mande uma mensagem para +55 82 99155304 e solicite o reembolso.</h4>
+      </div>
+
+      <div
+        class="drop-item"
+        onclick="toggleInfo(2)"
+      >
+        <h3 class="plus">+</h3>
+        <h2 class="drop-text">2. COMO DEVO USAR O PROSTAZIN?</h2>
+      </div>
+      <div
+        id="info2"
+        class="info"
+      >
+        <h4>Após mais de 200 testes clínicos, recomendamos que você tome uma cápsula de Prostazin após acordar, acompanhado de um copo de água.</h4>
+      </div>
+
+      <div
+        class="drop-item"
+        onclick="toggleInfo(3)"
+      >
+        <h3 class="plus">+</h3>
+        <h2 class="drop-text">3. O PROSTAZIN É APROVADO PELA ANVISA?</h2>
+      </div>
+      <div
+        id="info3"
+        class="info"
+      >
+        <h4>O Prostazin foi autorizado pela Anvisa nos termos da RDC 240 de 26/07/2018.</h4>
+        <h4>Nosso produto é fabricado por uma fábrica de última geração, certificada pela Anvisa, sobre os padrões mais rigorosos de qualidade.</h4>
+      </div>
+
+      <div
+        class="drop-item"
+        onclick="toggleInfo(4)"
+      >
+        <h3 class="plus">+</h3>
+        <h2 class="drop-text">4. QUEM PODE USAR O PROSTAZIN?</h2>
+      </div>
+      <div
+        id="info4"
+        class="info"
+      >
+        <h4>O Prostazin tem uma fórmula com ingredientes naturais e não apresenta efeitos colaterais. O produto é indicado para homens acima de 18 anos.</h4>
+      </div>
+
+      <div
+        class="drop-item"
+        onclick="toggleInfo(5)"
+      >
+        <h3 class="plus">+</h3>
+        <h2 class="drop-text">5. QUAL O PRAZO DE ENTREGA DO PROSTAZIN?</h2>
+      </div>
+      <div
+        id="info5"
+        class="info"
+      >
+        <h4>Assim que seu pedido for confirmado, seus fracos serão despachados pela fábrica, imediatamente enviados para o seu endereço e chegarão na sua porta de 3 a 10 dias úteis.</h4>
+      </div>
+
+      <div
+        class="drop-item"
+        onclick="toggleInfo(6)"
+      >
+        <h3 class="plus">+</h3>
+        <h2 class="drop-text">6. O PROSTAZIN É VENDIDO EM FARMÁCIAS?</h2>
+      </div>
+      <div
+        id="info6"
+        class="info"
+      >
+        <h4>Definitivamente não! A venda do Prostazin é feita exclusivamente neste site oficial ou em nossos canais de atendimento. Não nos responsabilizamos pela compra de falsificações do produto em marketplaces (MagazineLuiza, Shopee, Mercado Livre, Americanas e etc..).</h4>
+      </div>
+
+      <div
+        class="drop-item"
+        onclick="toggleInfo(7)"
+      >
+        <h3 class="plus">+</h3>
+        <h2 class="drop-text">7. ESTE SITE É SEGURO?</h2>
+      </div>
+      <div
+        id="info7"
+        class="info"
+      >
+        <h4>Sim! Utilizamos a mesma tecnologia de criptografia dos grandes bancos brasileiros, e isso garante que tanto o seu acesso quanto os seus dados estejam seguros neste site.</h4>
+      </div>
+      <div
+        class="billing-button"
+        onclick="scrollToSection()"
+      >
+        QUERO EXPERIMENTAR
+      </div>
+    </div>
+
+    <!-- COMMENTS -->
     <div class="body-component">
       <h2 class="comments-count">15 de 9.395 Comentários</h2>
       <div class="divider"></div>
@@ -413,7 +634,18 @@
     </div>
   </body>
 </html>
-
+<script>
+  function scrollToSection() {
+    var section = document.querySelector("#scrollToSection");
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+<script>
+  function toggleInfo(itemNumber) {
+    var info = document.getElementById("info" + itemNumber);
+    info.style.display = (info.style.display === "flex") ? "none" : "flex";
+  }
+</script>
 <script src="https://payt.com.br/cdn/queryparameters.js"></script>
 <script type="text/javascript">
   (function(c,l,a,r,i,t,y){
